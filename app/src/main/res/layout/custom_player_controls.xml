@@ -8,7 +8,6 @@
 
     <!-- Progress Bar -->
     <ProgressBar
-        android:id="@id/exo_progress"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="4dp"
@@ -24,41 +23,35 @@
         android:paddingLeft="8dp"
         android:paddingRight="8dp">
 
-        <!-- Play/Pause -->
         <ImageButton
-            android:id="@id/exo_play_pause"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="?attr/selectableItemBackground"
             android:src="@drawable/ic_play"
             android:contentDescription="@string/play_pause" />
 
-        <!-- Time Display -->
         <TextView
-            android:id="@id/exo_position"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#fff"
             android:textSize="12sp"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="8dp"
+            android:text="00:00" />
 
-        <!-- Duration -->
         <TextView
-            android:id="@id/exo_duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#a0a0a0"
             android:textSize="12sp"
-            android:layout_marginStart="4dp" />
+            android:layout_marginStart="4dp"
+            android:text="/ 00:00" />
 
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_weight="1" />
 
-        <!-- Fullscreen -->
         <ImageButton
-            android:id="@id/exo_fullscreen"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="?attr/selectableItemBackground"
