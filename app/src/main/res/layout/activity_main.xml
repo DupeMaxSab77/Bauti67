@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:background="#0f0f0f">
 
-    <!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
@@ -22,8 +21,7 @@
             android:text="@string/app_name"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="#e50914"
-            android:fontFamily="@font/bebas_neue" />
+            android:textColor="#e50914" />
 
         <TextView
             android:id="@+id/channel_count"
@@ -34,7 +32,6 @@
             android:textColor="#a0a0a0" />
     </LinearLayout>
 
-    <!-- Search Bar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -66,13 +63,11 @@
             android:contentDescription="@string/search" />
     </LinearLayout>
 
-    <!-- Content Area -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <!-- Channels Grid -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/channels_grid"
             android:layout_width="match_parent"
@@ -81,142 +76,50 @@
             android:scrollbars="vertical"
             android:clipToPadding="false" />
 
-        <!-- Remote Control Panel -->
         <LinearLayout
             android:id="@+id/remote_panel"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="rgba(0,0,0,0.9)"
+            android:background="#E6000000"
             android:gravity="center"
             android:orientation="vertical"
-            android:visibility="gone">
-
-            <LinearLayout
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_remote"
-                android:orientation="vertical"
-                android:padding="24dp"
-                android:elevation="8dp">
-
-                <!-- Remote Title -->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/remote_control"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#fff"
-                    android:layout_marginBottom="16dp" />
-
-                <!-- D-Pad -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginBottom="24dp">
-
-                    <ImageButton
-                        android:id="@+id/btn_up"
-                        android:layout_width="56dp"
-                        android:layout_height="56dp"
-                        android:background="@drawable/btn_remote"
-                        android:src="@drawable/ic_up"
-                        android:contentDescription="@string/up" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginVertical="8dp">
-
-                        <ImageButton
-                            android:id="@+id/btn_left"
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
-                            android:background="@drawable/btn_remote"
-                            android:src="@drawable/ic_left"
-                            android:layout_marginEnd="8dp"
-                            android:contentDescription="@string/left" />
-
-                        <ImageButton
-                            android:id="@+id/btn_ok"
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
-                            android:background="@drawable/btn_remote"
-                            android:src="@drawable/ic_ok"
-                            android:layout_marginHorizontal="8dp"
-                            android:contentDescription="@string/ok" />
-
-                        <ImageButton
-                            android:id="@+id/btn_right"
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
-                            android:background="@drawable/btn_remote"
-                            android:src="@drawable/ic_right"
-                            android:layout_marginStart="8dp"
-                            android:contentDescription="@string/right" />
-                    </LinearLayout>
-
-                    <ImageButton
-                        android:id="@+id/btn_down"
-                        android:layout_width="56dp"
-                        android:layout_height="56dp"
-                        android:background="@drawable/btn_remote"
-                        android:src="@drawable/ic_down"
-                        android:contentDescription="@string/down" />
-                </LinearLayout>
-
-                <!-- Volume Controls -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:layout_marginBottom="16dp">
-
-                    <ImageButton
-                        android:id="@+id/btn_vol_up"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/btn_remote_sm"
-                        android:src="@drawable/ic_vol_up"
-                        android:layout_marginEnd="12dp"
-                        android:contentDescription="@string/vol_up" />
-
-                    <ImageButton
-                        android:id="@+id/btn_vol_down"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/btn_remote_sm"
-                        android:src="@drawable/ic_vol_down"
-                        android:contentDescription="@string/vol_down" />
-                </LinearLayout>
-
-                <!-- Back Button -->
-                <Button
-                    android:id="@+id/btn_back"
-                    android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:text="@string/back"
-                    android:textColor="#fff"
-                    android:background="@drawable/btn_back"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </LinearLayout>
+            android:visibility="gone" />
     </FrameLayout>
 
-    <!-- TV Toggle Button (Fixed Position) -->
-    <ImageButton
-        android:id="@+id/tv_toggle_btn"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/btn_tv_toggle"
-        android:src="@drawable/ic_remote"
-        android:contentDescription="@string/toggle_tv_mode" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#181818"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:elevation="4dp">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_play"
+            android:contentDescription="Home" />
+
+        <ImageButton
+            android:id="@+id/btn_remote_toggle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_remote"
+            android:contentDescription="Control remoto" />
+
+        <ImageButton
+            android:id="@+id/btn_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="Configuracion" />
+    </LinearLayout>
 
 </LinearLayout>
