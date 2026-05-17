@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_bg">#0f0f0f</color>
+    <color name="dark_bg2">#181818</color>
+    <color name="dark_bg3">#1e1e1e</color>
+    <color name="dark_bg4">#252525</color>
+    <color name="primary_red">#e50914</color>
+    <color name="primary_red2">#f40612</color>
+    <color name="red_dim">rgba(229,9,20,.15)</color>
+    <color name="text_primary">#ffffff</color>
+    <color name="text_secondary">#e5e5e5</color>
+    <color name="text_muted">#a0a0a0</color>
+    <color name="text_muted2">#4a4a4a</color>
+    <color name="border_light">rgba(255,255,255,.08)</color>
+    <color name="border_lighter">rgba(255,255,255,.16)</color>
+    <color name="gold">#f5c518</color>
+    <color name="error">#ef4444</color>
+    <color name="success">#4ade80</color>
+</resources>

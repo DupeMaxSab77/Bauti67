@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="200dp"
+    android:background="@drawable/bg_channel_card"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center_horizontal"
+    android:elevation="2dp">
+
+    <!-- Channel Logo -->
+    <ImageView
+        android:id="@+id/channel_logo"
+        android:layout_width="144dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:background="#1e1e1e"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Channel Name -->
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Channel Name"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center" />
+
+    <!-- Channel Group -->
+    <TextView
+        android:id="@+id/channel_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group"
+        android:textColor="#a0a0a0"
+        android:textSize="10sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center" />
+
+</LinearLayout>

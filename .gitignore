@@ -1,0 +1,60 @@
+# Gradle files
+.gradle/
+build/
+gradle/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Local configuration
+local.properties
+
+# Key files
+*.jks
+*.keystore
+*.key
+keystore.properties
+
+# Generated files
+.classpath
+.project
+.settings
+bin/
+gen/
+
+# AAB and APK files
+*.aab
+*.apk
+
+# Maven
+.m2/
+pom.xml.tag
+pom.xml.releaseBackup
+
+# Kotlin
+.kotlin_module
+
+# Output files
+out/
+*.log
+
+# Crashlytics
+.crashlytics
+
+# NDK
+obj/

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bauti TV</string>
+    <string name="search_channels">Search channels...</string>
+    <string name="search">Search</string>
+    <string name="remote_control">REMOTE CONTROL</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="ok">OK</string>
+    <string name="back">Back</string>
+    <string name="vol_up">Volume Up</string>
+    <string name="vol_down">Volume Down</string>
+    <string name="toggle_tv_mode">Toggle TV Mode</string>
+    <string name="close">Close</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="fullscreen">Fullscreen</string>
+    <string name="settings">Settings</string>
+</resources>
