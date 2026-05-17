@@ -28,6 +28,11 @@
         <item name="android:navigationBarColor">@color/dark_bg</item>
     </style>
 
+    <!-- Base Text Style -->
+    <style name="TextStyle">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
     <!-- Text Styles -->
     <style name="TextStyle.Title">
         <item name="android:textSize">24sp</item>
@@ -59,10 +64,9 @@
         <item name="cornerRadius">8dp</item>
     </style>
 
-    <style name="ButtonStyle.Secondary" parent="Widget.MaterialComponents.OutlinedButton">
+    <style name="ButtonStyle.Secondary" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/primary_red</item>
         <item name="android:textStyle">bold</item>
-        <item name="strokeColor">@color/primary_red</item>
         <item name="cornerRadius">8dp</item>
     </style>
 
