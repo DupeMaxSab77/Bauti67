@@ -22,17 +22,24 @@ object ChannelRepository {
             val jsonObject = gson.fromJson(jsonBody, JsonObject::class.java)
             val channels = mutableListOf<Channel>()
             
-            jsonObject.optJSONArray("channels")?.forEach { canal ->
-                val obj = canal.asJsonObject
-                channels.add(Channel(
-                    id = obj.get("id")?.asInt ?: 0,
-                    name = obj.get("nombre")?.asString ?: "Unknown",
-                    url = obj.get("enlace")?.asString ?: "",
-                    logo = obj.get("logo")?.asString,
-                    group = obj.get("grupo")?.asString ?: "General",
-                    source = obj.get("fuente")?.asString,
-                    type = "channel"
-                ))
+            val channelsArray = jsonObject.getAsJsonArray("channels")
+            if (channelsArray != null) {
+                for (item in channelsArray) {
+                    try {
+                        val obj = item.asJsonObject
+                        channels.add(Channel(
+                            id = obj.get("id")?.asInt ?: 0,
+                            name = obj.get("nombre")?.asString ?: "Unknown",
+                            url = obj.get("enlace")?.asString ?: "",
+                            logo = obj.get("logo")?.asString,
+                            group = obj.get("grupo")?.asString ?: "General",
+                            source = obj.get("fuente")?.asString,
+                            type = "channel"
+                        ))
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
+                }
             }
             
             channels
@@ -50,13 +57,5 @@ object ChannelRepository {
             channel.group.lowercase().contains(lowerQuery) ||
             (channel.source?.lowercase()?.contains(lowerQuery) ?: false)
         }
-    }
-
-    fun searchMovies(query: String): List<Channel> {
-        return TMDBService.searchMovies(query)
-    }
-
-    fun searchSeries(query: String): List<Channel> {
-        return TMDBService.searchSeries(query)
     }
 }
